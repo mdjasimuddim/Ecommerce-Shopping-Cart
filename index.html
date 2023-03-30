@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Add to Cart</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"></head>
+<body>
+    
+    <div class="container">
+        <h1 class="h1">Fast food & Restaurent</h1>
+        <div class="card">
+            <div class="card-img">
+                <img src="blog-4.jpg" class="img" alt="">
+            </div>
+            <div class="card-title">
+                <h3>Chicken pizza</h3>
+                <h3>Size: 6'</h3>
+                <h3 class="price">Price: $<span id="price1">200</span></h3>
+
+                <i class="fas fa-plus icon" onclick="increment('count','price1','item1')"></i>
+                <input class="input" type="button" id="count" value="0" >
+                <i class="fas fa-minus icon" onclick="decrement('count','price1','item1')"></i>
+                <span class="item">Your Items: $<span id="item1">00</span></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <hr class="hr-style">
+        <div class="card">
+            <div class="card-img">
+                <img src="blog-3.jpg" class="img" alt="">
+            </div>
+            <div class="card-title">
+                <h3>Chicken salad</h3>
+                <h3>Size: 9'</h3>
+                <h3 class="price">Price: $<span id="price2">220</span></h3>
+
+                <i class="fas fa-plus icon" onclick="increment('count1','price2','item2')"></i>
+                <input class="input" type="button" id="count1" value="0" >
+                <i class="fas fa-minus icon" onclick="decrement('count1','price2','item2')"></i>
+                <span class="item">Your Items: $<span id="item2">00</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <h1 class="total">The Total Amount of </h1>
+        <h2>Product Ammount: $<span id="pr_amount">00</span></h2>
+        <h2>Delivery Charge: $<span id="charge">20</span></h2>
+        ---------------------------------------------------------------------------------------------
+        <h2>Total product amount: $<span id="total_amount">00</span></h2>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <div class="kupon" id="Coupon_main_div">
+            <h4 class="coupon">50 tk less with coupon code</h4> <br>
+            <h4 class="code">Your Code is : Jasim_Uddim</h4>
+            <input class="couponInput" id="coupon_INput" type="text" placeholder="Your Coupon code ...">
+            <br>
+            <br>
+            <button class="apply" id="apply">Apply</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
